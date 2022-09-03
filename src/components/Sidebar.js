@@ -19,16 +19,20 @@ export default function Sidebar() {
           </svg>
         </button>
       ) : (
-        <div className="top-0 right-0 fixed bg-blue-400 w-[35vw] h-full p-10">
-          <button
-            class="text-xl text-white fixed top-4 right-4"
-            onClick={() => setOpen(false)}
-          >
-            X
-          </button>
-          <h2 className="text-2xl text-white">this is the Sidebar</h2>
-        </div>
+        <button
+          class="text-xl text-white fixed top-4 right-4 z-10"
+          onClick={() => setOpen(false)}
+        >
+          X
+        </button>
       )}
+      <div
+        className={`top-0 right-0 fixed bg-blue-400 w-[35vw] h-full p-10 ${
+          open ? "translate-x-0" : "translate-x-full"
+        } ease-in-out duration-300`}
+      >
+        <h2 className="text-2xl text-white">this is the Sidebar</h2>
+      </div>
     </>
   );
 }
