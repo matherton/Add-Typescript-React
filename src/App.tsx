@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Header buttonText="Click Me" />
       <Sidebar />
-      <header className="App-header">
+      <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      </div>
       <Footer userName="Mark" />
     </div>
   );
