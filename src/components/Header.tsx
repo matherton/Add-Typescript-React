@@ -18,10 +18,10 @@ export default function ({ buttonText }: HeaderProps) {
     setCount(count + 1);
   };
   return (
-    <div>
+    <header className="h-10">
       <h1>Header</h1>
       <button onClick={increment}>{buttonText || "Click the btn"}</button>
       <p>{count}</p>
-    </div>
+    </header>
   );
 }

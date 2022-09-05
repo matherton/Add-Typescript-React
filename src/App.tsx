@@ -8,13 +8,15 @@ import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="flex flex-col h-screen justify-between">
       <Header buttonText="Click Me" />
       <Sidebar />
-      <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="mx-auto mt-8">
+        <h1 className="text-4xl text-center">Main Content</h1>
+        {/*<img src={logo} className="App-logo" alt="logo" />*/}
       </div>
-      <Footer userName="Mark" />
+      {/* <Footer userName="Mark" /> */}
+      <Footer footerText="Mark" />
     </div>
   );
 }

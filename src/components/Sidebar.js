@@ -17,7 +17,7 @@ export default function Sidebar() {
         </button>
       ) : (
         <button
-          class="text-xl text-white fixed top-4 right-4 z-10"
+          className="text-xl text-white fixed top-4 right-4 z-10"
           onClick={() => setOpen(false)}
         >
           X
