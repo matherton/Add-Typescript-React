@@ -6,7 +6,7 @@ export default function Sidebar() {
     <>
       {!open ? (
         <button
-          className="fixed  z-30 flex items-center cursor-pointer right-10 top-6"
+          className="fixed  z-30 flex items-center cursor-pointer right-10 top-4"
           onClick={() => setOpen(true)}
         >
           <svg fill="#2563EB" viewBox="0 0 100 80" width="40" height="40">
