@@ -4,13 +4,6 @@ interface HeaderProps {
   buttonText?: string;
 }
 
-interface Movies {
-  title: string;
-  date: string;
-  rating: string;
-  description: string;
-}
-
 export default function ({ buttonText }: HeaderProps) {
   const [count, setCount] = useState(0);
   const [movies, setMovies] = useState(null);
